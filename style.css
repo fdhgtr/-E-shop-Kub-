@@ -1,52 +1,78 @@
 
-.navbar {
-    background-color: #f8f9fa; 
-    border-bottom: 2px solid #ddd;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #007bff;
-    text-transform: uppercase;
-}
-
-.navbar-brand:hover {
-    color: #0056b3;
-}
-
-.navbar-nav .nav-link {
-    font-size: 1rem;
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     color: #333;
-    margin-right: 10px;
+    padding: 20px;
+}
+
+/* Button Styling */
+button.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #343a40;
+    padding: 15px 0;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #ddd;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-transform: capitalize;
     transition: color 0.3s ease;
 }
 
-.navbar-nav .nav-link.active {
+.navbar .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-link.active {
     color: #007bff;
-    font-weight: bold;
-    border-bottom: 2px solid #007bff;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #0056b3;
-}
-
-.navbar-nav .nav-link.disabled {
-    color: #aaa;
+.navbar .navbar-nav .nav-link.disabled {
+    color: #6c757d;
     cursor: not-allowed;
 }
 
 .navbar-toggler {
-    border: 1px solid #ccc;
+    background-color: #fff;
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-color: #343a40;
 }
 
-
-@media (max-width: 992px) {
+/* Ensure navbar works well in smaller screens */
+@media (max-width: 768px) {
     .navbar-nav {
         text-align: center;
     }
