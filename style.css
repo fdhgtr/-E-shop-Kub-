@@ -1,102 +1,63 @@
-
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-/* Navbar Styles */
 .navbar {
-    background-color: #007bff;
-    padding: 10px 20px; /* Adjust the padding for more space */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Flex Layout for Navbar */
-.navbar .container-fluid {
-    display: flex;
-    justify-content: flex-start; /* Align everything to the left */
-    align-items: center;
+.navbar .logo {
+  display: flex;
+  align-items: center;
 }
 
-/* Logo Styling */
-.navbar .navbar-brand {
-    font-size: 1.6rem;
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    display: flex;
-    align-items: center;
+.navbar .logo img {
+  height: 24px;
 }
 
-.navbar .navbar-brand img {
-    height: 40px; /* Set a fixed height for the logo */
-    margin-right: 10px; /* Space between logo and text */
+.navbar .links {
+  display: flex;
+  gap: 20px;
 }
 
-/* Navbar Toggler */
-.navbar-toggler {
-    border: none;
-    background-color: #ffffff;
+.navbar .links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
-.navbar .navbar-toggler-icon {
-    background-color: #007bff;
+.navbar .links a.active {
+  color: #ff5722; /* Barva aktivní položky */
 }
 
-/* Navigation Links */
-.navbar-nav {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 0;
-    margin-left: 20px; /* Adjust margin to bring the links closer to the logo */
-    display: flex; /* Make the nav items inline */
+.navbar .links a:hover {
+  color: #ff5722;
 }
 
-.navbar-nav .nav-item {
-    margin: 0 15px; /* Adjust spacing between links */
+.navbar .actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-.navbar-nav .nav-link {
-    color: #ffffff;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: 500;
-    text-decoration: none;
-    padding: 12px 18px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+.navbar .search {
+  position: relative;
 }
 
-/* Hover effect for navbar links (background color change) */
-.navbar-nav .nav-link:hover {
-    background-color: #0056b3;
-    border-radius: 5px;
-    color: #fff;
+.navbar .search input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
 }
 
-.navbar-nav .nav-link.active {
-    background-color: #0056b3;
-    color: white;
-    border-radius: 5px;
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-    .navbar-nav {
-        margin-top: 10px;
-        text-align: center;
-    }
-    
-    .navbar-nav .nav-item {
-        display: block;
-        margin: 10px 0;
-    }
-    
-    .navbar-nav .nav-link {
-        text-align: center;
-        padding: 12px;
-    }
+.navbar .icon {
+  font-size: 20px;
+  cursor: pointer;
 }
