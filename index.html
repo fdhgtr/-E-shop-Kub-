@@ -1,36 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navbar Example</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-shop s oblečením</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="navbar">
-    <div class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike Logo">
-    </div>
-    <div class="links">
-      <!-- Přidejte třídu 'active' ručně podle aktuální stránky -->
-      <a href="domu.html" class="active">Domů</a>
-      <a href="muzi.html">Muži</a>
-      <a href="zeny.html">Ženy</a>
-      <a href="deti.html">Děti</a>
-      <a href="vyprodej.html">Výprodej</a>
-    </div>
-    <div class="actions">
-      <div class="search">
-        <input type="text" placeholder="Hledat">
-      </div>
-      <span class="icon">♡</span>
-      <span class="icon">🛒</span>
-    </div>
-  </div>
-</body>
-</html>
-  
-</body>
-</html>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="#">LOGO</a>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="#home">Domů</a></li>
+            <li><a href="#new-arrivals">Novinky</a></li>
+            <li><a href="#men">Muži</a></li>
+            <li><a href="#women">Ženy</a></li>
+            <li><a href="kontakty.html">Kontakty</a></li>
+        </ul>
+        <div class="navbar-actions">
+            <div class="search-bar">
+                <input type="text" placeholder="Hledat..." />
+                <button>🔍</button>
+            </div>
+            <a href="#cart" class="cart-icon">🛒</a>
+        </div>
+    </nav>
 
-    
+    <!-- Hlavní banner -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Objevte svůj styl</h1>
+            <p>Nejnovější kolekce pro muže i ženy</p>
+            <a href="nahledso.webp" class="hero-button">Nakupovat nyní</a>
+        </div>
+    </header>
+
+    <!-- Sekce kategorií -->
+    <section class="categories">
+        <h2>Kategorie</h2>
+        <div class="category-cards">
+            <div class="category-card">
+                <img src="images/men.jpg" alt="Muži">
+                <h3>Muži</h3>
+            </div>
+            <div class="category-card">
+                <img src="images/women.jpg" alt="Ženy">
+                <h3>Ženy</h3>
+            </div>
+            <div class="category-card">
+                <img src="images/sale.jpg" alt="Slevy">
+                <h3>Slevy</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doporučené produkty -->
+    <section class="featured-products">
+        <h2>Doporučené produkty</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/product1.jpg" alt="Produkt 1">
+                <h3>Stylový kabát</h3>
+                <p>1 999 Kč</p>
+                <button>Koupit</button>
+            </div>
+            <div class="product-card">
+                <img src="images/product2.jpg" alt="Produkt 2">
+                <h3>Klasická mikina</h3>
+                <p>999 Kč</p>
+                <button>Koupit</button>
+            </div>
+            <div class="product-card">
+                <img src="images/product3.jpg" alt="Produkt 3">
+                <h3>Elegantní šaty</h3>
+                <p>1 499 Kč</p>
+                <button>Koupit</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekce novinky a slevy -->
+    <section class="promotions">
+        <h2>Novinky a slevy</h2>
+        <div class="promotion-banner">
+            <p>Sleva až 50 % na vybrané produkty!</p>
+            <a href="#sale" class="promotion-button">Prohlédnout nabídku</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 E-shop s oblečením. Všechna práva vyhrazena.</p>
+    </footer>
+</body>
+</html>
