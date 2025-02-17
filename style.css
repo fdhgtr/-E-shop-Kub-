@@ -96,11 +96,11 @@ body {
   color: #f59e0b;
 }
 
-/* Hlavní banner */
+
 .hero {
-  position: relative; /* Umožní správné vrstvení */
-  background: url('nahledso.png') no-repeat center center/cover;
-  height: 70vh; /* nebo jiná výška dle potřeby */
+  position: relative; 
+  background: url('images/nahledso.png') no-repeat center center/cover;
+  height: 70vh; 
   display: flex;
   align-items: center;
   justify-content: center;
